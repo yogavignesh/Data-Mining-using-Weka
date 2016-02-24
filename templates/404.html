@@ -1,0 +1,60 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Healthcare Analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="h_bg">
+<div class="wrap">
+<div class="header">
+		<div class="logo">
+			<h1><a href="{{url_for('index')}}"><img src="{{ url_for('static', filename = 'images/logo.png') }}" alt=""></a></h1>
+		</div>
+	</div>
+</div>
+</div>
+<div class="nav_bg">
+<div class="wrap">
+		<ul class="nav">
+			<li class="active">
+			<a href="{{url_for('index')}}">Home</a></li>
+			<li><a href="{{url_for('search')}}">Search</a></li>
+			<li><a href="{{url_for('classify')}}">Classification</a></li>
+			<li><a href="{{url_for('association')}}">Association Rule Mining</a></li>
+			<li ><a href="{{url_for('cumsum')}}">Cumsum Calculator</a></li>
+			<li><a href="{{url_for('about')}}">About The Team</a></li>
+		<div class="clear"></div>
+		</ul>
+</div>
+</div>
+<div class="s_bg">
+<div class="wrap">
+<div class="cont_main">
+<div class="page">
+	<h2>404</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="ftr-bg">
+<div class="wrap">
+<div class="footer">
+		<div class="copy">
+			<p class="w3-link"><a href="{{url_for('about')}}"> Group 5</a></p>
+		</div>
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

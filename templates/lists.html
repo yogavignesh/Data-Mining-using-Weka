@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EarthQuakesInformation</title>
+
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+  <style>
+    .fig {
+      font-family:Arial;
+      font-size:15pt;
+      color:red;
+    }
+  </style>
+  </head>
+  <body>
+<div>
+<form action="/" method="POST">
+<input id="txtInfo" type="text" name="txtinfo" />
+</form>
+
+</div>
+<div>
+{%if admission_results%}
+<table style="border: 1px solid black">
+        <tbody>
+ 
+		  <tr>
+            <th width="35%" style="background-color: #CCFFCC; margin: 5px">Day of admission</th>
+            <th style="background-color: #CCFFCC; margin: 5px">Source of admission</th>
+			
+          </tr>
+{% for admission in admission_results %}
+             <tr>
+               <td style="text-align:center">{{ admission['day_of_admission'] }}</td>
+               <td style="text-align:center">{{ admission['source_of_admission'] }}</td>
+             </tr>
+          {% endfor %}
+		  </table>
+{%endif%}
+</div>
+<input id='hdnData' name='hdnData' type='hidden' value="">
+
+	
+
+  </body>
+</html>
